@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Custom scrollbar styles */
+@layer utilities {
+  /* Hide scrollbar by default, show on hover */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+  
+  /* Thin scrollbar that shows on hover */
+  .scrollbar-thin-hover {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  .scrollbar-thin-hover:hover {
+    scrollbar-color: rgba(139, 92, 246, 0.5) transparent;
+  }
+  
+  .scrollbar-thin-hover::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .scrollbar-thin-hover::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin-hover::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-thin-hover:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 92, 246, 0.5);
+  }
+}
