@@ -43,7 +43,7 @@ log/
 .env.development.local
 .env.test.local
 .env.production.local
-
+.env
 # Coverage reports
 htmlcov/
 .tox/
